@@ -23,9 +23,15 @@ namespace CryptoLogger.Models
 
         [JsonProperty("percent_change_24h")]
         public float? LastDayPrecentChange { get; set; }
+
         [JsonProperty("percent_change_7d")]
         public float? LastWeekPrecentChange { get; set; }
+
         [JsonProperty("percent_change_30d")]
         public float? LastMonthPrecentChange { get; set; }
+
+        [JsonProperty("updated_at")]
+        public DateTime UpdatedAt { get; set; }
+
     }
 }
